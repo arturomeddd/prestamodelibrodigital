@@ -1,3 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans SC', sans-serif; 
+  background-image: url('https://img.freepik.com/fotos-premium/espacio-interior-biblioteca-publica-ventana-parte-posterior-fondo-aprendizaje-educacion-ia-generativa_790651-1001.jpg'); /* agrega tu imagen */
+  background-size: cover;
+  background-position: center;
+  color: rgb(7, 0, 0);
+  text-align: center;
+}
+
+.contenedor {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffd633;
+  transform: scale(1.05);
+}
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.encabezado h1 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 600;
+}
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-bottom: 3px solid #ffcc00;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.encabezado h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+.contenedor {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 40px;
+  width: 80%;
+  max-width: 600px;
+  margin: 100px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: aparecer 1.5s ease-in-out;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffd633;
+  transform: scale(1.05);
+}
+
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top: 2px solid #ffcc00;
+}
 * {
     margin: 0;
     padding: 0;

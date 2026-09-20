@@ -3,30 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bienvenido al Sistema de Préstamo</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<header class="encabezado">
-  <img src="https://images.seeklogo.com/logo-png/37/1/utc-logo-png_seeklogo-376703.png" 
-       alt="Logo o imagen de libros" 
-       class="logo">
-  <h1>Sistema de Préstamo de Libros</h1>
-</header>
-
-<body>
-  <div class="contenedor">
-    <h1>Bienvenido al Sistema de Préstamo de Libros</h1>
-    <p>Descubre, consulta y solicita tus libros favoritos fácilmente.</p>
-    <button onclick="entrar()">Entrar al sistema</button>
-  </div>
-
-  <script>
-    function entrar() {
-      window.location.href = "libros.html";
-    }
-    
-  </script>
+  <title>Blog - Arturo X Nauclapn</title>
   
-</body>
+  <!-- Tipografías elegantes y legibles -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos CSS del Blog -->
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
 
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">Sin letras chiquitas</a>
+    
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="blog.html" class="nav-link active">Blog</a></li>
+      <li><a href="index.html#problematica" class="nav-link">Reporte Ciudadano</a></li>
+      <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENEDOR PRINCIPAL DEL BLOG -->
+  <main class="blog-container">
+
+    <!-- CABECERA DEL BLOG -->
+    <header class="blog-header">
+      <h1 class="blog-title">Blog & Artículos de Interés</h1>
+      <p class="blog-subtitle">Análisis, propuestas, guías legales y temas relevantes para la comunidad.</p>
+      
+      <!-- NAVEGACIÓN POR CATEGORÍAS -->
+      <div class="category-pills">
+        <button class="pill active" data-category="todas">Todas</button>
+        <button class="pill" data-category="comunidad">Comunidad</button>
+        <button class="pill" data-category="legal">Legal & Gestión</button>
+        <button class="pill" data-category="medio-ambiente">Medio Ambiente</button>
+        <button class="pill" data-category="cultura">Cultura & Juventud</button>
+      </div>
+    </header>
+
+    <!-- GRID DEL BLOG (CONTENIDO + BARRA LATERAL) -->
+    <div class="blog-layout">
+
+      <!-- COLUMNA PRINCIPAL (ARTÍCULOS) -->
+      <section class="posts-section">
+
+        <!-- ARTÍCULO DESTACADO (HERO POST) -->
+        <article class="featured-post" data-category="comunidad">
+          <div class="featured-img-wrap">
+            <img src="Images/arturo.ft.sen..jpg" alt="Artículo Destacado" class="featured-img">
+            <span class="badge">Destacado</span>
+          </div>
+          <div class="featured-content">
+            <span class="post-category">Comunidad & Gestión</span>
+            <h2 class="post-title"><a href="#">¿Cómo gestionar eficazmente la reparación de luminarias en tu colonia?</a></h2>
+            <p class="post-excerpt">Una guía paso a paso sobre los canales oficiales, los requisitos administrativos y las vías legales de acompañamiento para exigir servicios públicos eficientes.</p>
+            <div class="post-meta">
+              <span class="author">Por Arturo Medina</span>
+              <span class="dot">•</span>
+              <span class="date">20 Septiembre, 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- REJILLA DE ARTÍCULOS SECUNDARIOS -->
+        <div class="posts-grid">
+
+          <!-- Tarjeta 1 -->
+          <article class="post-card" data-category="legal">
+            <div class="card-img-wrap">
+              <img src="Images/logoart.png" alt="Artículo Legal" class="card-img">
+            </div>
+            <div class="card-body">
+              <span class="post-category">Legal & Gestión</span>
+              <h3 class="card-title"><a href="#">Conoce tus derechos ante cobros excesivos de agua municipal</a></h3>
+              <p class="card-excerpt">Explicamos los recursos administrativos a los que cualquier ciudadano de Naucalpan puede recurrir para solicitar la aclaración de su tarifa.</p>
+              <div class="post-meta">
+                <span class="date">15 Septiembre, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="post-card" data-category="medio-ambiente">
+            <div class="card-img-wrap">
+              <img src="Images/arturo.ft.sen..jpg" alt="Artículo Medio Ambiente" class="card-img">
+            </div>
+            <div class="card-body">
+              <span class="post-category">Medio Ambiente</span>
+              <h3 class="card-title"><a href="#">Iniciativas comunitarias para la recolección de agua pluvial</a></h3>
+              <p class="card-excerpt">Proyectos sostenibles que podemos implementar en colonias como Lomas Verdes y Satélite para hacer frente al desabasto.</p>
+              <div class="post-meta">
+                <span class="date">10 Septiembre, 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 3 -->
+          <article class="post-card" data-category="cultura">
+            <div class="card-img-wrap">
+              <img src="Images/logoart.png" alt="Artículo Cultura" class="card-img">
+            </div>
+            <div class="card-body">
+              <span class="post-category">Cultura & Juventud</span>
+              <h3 class="card-title"><a href="#">El impacto de las expresiones artísticas y juveniles en Naucalpan</a></h3>
+              <p class="card-excerpt">Un recorrido por el talento local y la importancia de rescatar los espacios públicos mediante talleres y proyectos culturales.</p>
+              <div class="post-meta">
+                <span class="date">02 Septiembre, 2026</span>
+              </div>
+            </div>
+          </article>
+
+        </div> <!-- Fin posts-grid -->
+
+      </section>
+
+      <!-- BARRA LATERAL (SIDEBAR) -->
+      <aside class="blog-sidebar">
+
+        <!-- MÓDULO DE BÚSQUEDA -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Buscar Artículo</h3>
+          <form class="search-form" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Escribe palabras clave...">
+            <button type="submit">🔍</button>
+          </form>
+        </div>
+
+        <!-- MÓDULO SOBRE EL AUTOR -->
+        <div class="sidebar-widget author-widget">
+          <img src="Images/arturo.ft.sen..jpg" alt="Arturo Medina" class="widget-avatar">
+          <h3>Arturo Medina</h3>
+          <p>Joven comprometido con la intermediación ciudadana, el análisis jurídico y la mejora de los servicios en Naucalpan.</p>
+        </div>
+
+      </aside>
+
+    </div> <!-- Fin blog-layout -->
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-disclaimer">Esta iniciativa ciudadana busca informar y generar diálogo y pensamiento constructivo entre la ciudadania.</p>
+      <p class="footer-copy">&copy; 2026 Sin Letras Chiquitas. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Lógica JavaScript del Blog -->
+  <script src="blog.js"></script>
+</body>
 </html>
